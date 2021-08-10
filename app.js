@@ -13,15 +13,15 @@ var btn = document.querySelector(".calculation")
 
 var output = document.querySelector(".heading")
 
-var main=document.querySelector(".main")
-main.style.display="none"
-var privacy=document.querySelector(".privacymsg")
-var btnPrivacy=document.querySelector(".privacy")
-btnPrivacy.addEventListener("click",magic)
+var main = document.querySelector(".main")
+main.style.display = "none"
+var privacy = document.querySelector(".privacymsg")
+var btnPrivacy = document.querySelector(".privacy")
+btnPrivacy.addEventListener("click", magic)
 
-function magic(){
-    main.style.display="block"
-    privacy.style.display="none"
+function magic() {
+    main.style.display = "block"
+    privacy.style.display = "none"
 }
 
 
