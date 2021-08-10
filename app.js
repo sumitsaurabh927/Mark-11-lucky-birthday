@@ -11,7 +11,7 @@ var luckyNumber = document.querySelector(".luckynumber")
 
 var btn = document.querySelector(".calculation")
 
-var output = document.querySelector(".output")
+var output = document.querySelector(".heading")
 
 var main=document.querySelector(".main")
 main.style.display="none"
@@ -52,14 +52,17 @@ function compare(sum, luckyNum) {
     } else if (Number(luckyNumber.value) === 0 || Math.sign(Number(luckyNumber.value)) === -1) {
         output.innerText = 'Lucky Number can not be 0 or negative!';
     } else if (sum % luckyNum === 0) {
-        console.log("lucky")
+        // console.log("lucky")
+        unluckygif.style.display = "none"
+
         luckygif.style.display = "block"
 
-        output.innerText = "lucky"
+        output.innerText = "It's your lucky day!!!"
     } else {
-        console.log("unlucky");
-        unluckygif.style.display = "block"
+        // console.log("unlucky");
+        luckygif.style.display = "none"
 
-        output.innerText = "unlucky"
+        unluckygif.style.display = "block"
+        output.innerText = "You shouldn't belive in luck so much!"
     }
 }
